@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>广告商</title>
+    </head>
+    <style>
+    *{
+        padding: 0;
+	    margin:0;
+        box-sizing: border-box;
+    }
+    img {
+        display: block;
+    }
+
+    .top{
+        width: 1200px;
+        margin: 20px auto;
+    }
+    li{
+        list-style-type: none;
+    }
+    .top .top-heard{
+        height: 40px;
+        line-height: 40px;
+    }
+    .top-heard img{
+        display: inline-block;
+        width: 15px;
+        height: 18px;
+	    /*float: left;*/
+    }
+    .top-heard .topone{
+        margin-left: 11px;
+        font-size: 18px;
+        vertical-align: middle;
+        font-family: MicrosoftYaHei;
+        font-weight: bold;
+        color: #324057;
+        line-height: 20px;
+    }
+    .top-heard .fenge1{
+        width: 1px;
+        height: 14px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 2px;
+        margin-left: 17px;
+        margin-right: 32px;
+        background: #C0CCDA;
+    }
+    .top-heard .toptwo{
+        font-size: 14px;
+        margin-right: 29px;
+        vertical-align: middle;
+        font-family: MicrosoftYaHei;
+        font-weight: 400;
+        color: #5771E6;
+        line-height: 24px; 
+    }
+    .top-heard .fenge2{
+        width: 1px;
+        height: 14px;
+        display: inline-block;
+        margin-top: 2px;
+        margin-right: 29px;
+        background: #C0CCDA;
+        vertical-align: middle;
+    }
+    .top-heard .topth{
+        margin-right: 34px;
+        font-size: 14px;
+        font-family: MicrosoftYaHei;
+        font-weight: 400;
+        color: #6D7787;
+        line-height: 24px; 
+        vertical-align: middle;
+    }
+    .top-heard .fenge3{
+        width: 1px;
+        height: 14px;
+        display: inline-block;
+        margin-top: 2px;
+        background: #C0CCDA;
+        vertical-align: middle;
+    }
+    .top-heard .toplast{
+        float: right;
+        font-size: 14px;
+        font-family: MicrosoftYaHei;
+        font-weight: 400;
+        color: #324057;
+        vertical-align: middle;
+    }
+
+    .top .top-content{
+        overflow: hidden;
+    }
+    .top-content li{
+        width: 224px;
+        height: 252px;
+        margin-right: 20px;
+        float: left;
+        background: #FFFFFF;
+        border:1px solid #E3E9EE;
+        box-sizing: border-box;
+    }
+    .top-content li:last-child{
+        margin-right: 0;
+    }
+    .top-content img{
+        width: 100%;
+    }
+    .top-content h1{
+        padding:14px 10px 10px;
+        border-bottom: 1px solid #E3E9EE;
+        border-top: none;
+        font-size: 14px;
+        color: #324057;
+        line-height: 21px;
+    }
+    .top-content h2{
+        height: 40px;
+        line-height: 40px;
+        border-top: none;
+    }
+    .top-content .img1{
+        display: inline-block;
+        width: 16px;
+        height: 12px;
+        background: rgb(0, 0, 0);
+        margin-left: 11px;
+    }
+    .top-content span{
+        font-size: 12px;
+         vertical-align: middle;
+         color: #6D7787;
+    }
+
+    .bottom {
+        width: 1200px;
+        margin: 82px auto;
+        overflow: hidden;
+    }
+    .bottom .bottom-left{
+        height: 348px;
+        float: left;
+    }
+    .bottom-left .bottom-left-heard{
+        width: 810px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .bottom-left-heard img{
+        width: 16px;
+        height: 18px;
+        display: inline-block;
+        background: rgb(0, 0, 0);
+    }
+    .bottom-left-heard .bottomone{
+        margin-left: 11px;
+        font-size: 18px;
+        font-family: MicrosoftYaHei;
+        font-weight: bold;
+        color: #324057;
+        vertical-align: middle;
+    }
+    .bottom-left-heard .bottomlast{
+        font-size: 14px;
+        font-family: MicrosoftYaHei;
+        font-weight: 400;
+        color: #6D7787;
+        vertical-align: middle;
+        float: right;
+    }
+
+    .bottom-left-content {
+        overflow: hidden;
+    }
+    .bottom-left-content li{
+        width: 146px;
+        height: 148px;
+        background: #FFFFFF;
+        border: 4px solid #E8EDF3;
+        float: left;
+        margin-right: 20px;
+    }
+
+    .bottom .bottom-right{
+        height: 365px;
+        float: right;
+    }
+    .bottom-right .bottom-right-heard{
+        height: 40px;
+        line-height: 40px;
+    }
+    .bottom-right-heard img{
+        display: inline-block;
+        width: 16px;
+        height: 18px;
+        background: rgb(0, 0, 0);
+    }
+    .bottom-right-heard .bottomone{
+        margin-left: 10px;
+        font-size: 18px;
+        font-family: MicrosoftYaHei;
+        font-weight: bold;
+        color: #324057;
+        vertical-align: middle;
+        display: inline-block;
+
+    }
+    .bottom-right-heard .bottomlast{
+        font-size: 14px;
+        font-family: MicrosoftYaHei;
+        font-weight: 400;
+        color: #324057;
+        vertical-align: middle;
+        float: right;
+    }
+    .bottom-right .bottom-right-content{
+        overflow: hidden;
+        width: 322px;
+        height: 315px;
+        border: 1px solid #E3E9EE;
+    }
+    .bottom-right-content ul{
+        height: 57px;
+        background: #F9FBFD;
+        border-bottom: 1px solid #E3E9EE;
+    }
+    .bottom-right-content .content1{
+        height: 92px;
+        border-bottom: 1px solid #E3E9EE;
+    }
+
+
+
+    </style>
+
+    <body>
+    <!--上部分-->
+    <div class="top">
+        <!--上头部-->
+        <ul class="top-heard">
+            <h1>
+                <img src="list1-img/top-heard1.PNG"/>
+                <span class="topone">园区政策</span>
+                <img class="fenge1" />
+                <span class="toptwo">最新</span>
+                <img class="fenge2" />
+                <span class="topth">热门</span>
+                <img class="fenge3" />
+                <span class="toplast"><a>更多&gt;</a></span>
+            </h1>
+        </ul>
+
+        <!--上内容-->
+        <ul class="top-content">
+            <li>
+                <img   src="list1-img/top-content1.png"/>
+                <h1>
+                    基石资本张维不一定要投行业前三只要有成三只
+                </h1>
+                <h2>
+                    <img class="img1" />
+                    <span>89</span>
+                    <img class="img1"  />
+                    <span>2小时前</span>
+                </h2>
+            </li>
+            <li>
+                <img   src="list1-img/top-content2.png"/>
+                <h1>
+                    <p>基石资本张维不一定要投行业前三只要有成三只</p>
+                </h1>
+                <h2>
+                    <img class="img1" />
+                    <span>89</span>
+                    <img class="img1" />
+                    <span>2小时前</span>
+                </h2>
+            </li>
+            <li>
+                <img   src="list1-img/top-content3.png"/>
+                <h1>
+                    <p>基石资本张维不一定要投行业前三只要有成三只</p>
+                </h1>
+                <h2>
+                    <img class="img1" />
+                    <span>89</span>
+                    <img class="img1" />
+                    <span>2小时前</span>
+                </h2>
+            </li>
+            <li>
+                <img   src="list1-img/top-content4.png"/>
+                <h1>
+                    <p>基石资本张维不一定要投行业前三只要有成三只</p>
+                </h1>
+                <h2>
+                    <img class="img1" />
+                    <span>89</span>
+                    <img class="img1"/>
+                    <span>2小时前</span>
+                </h2>
+            </li>
+            <li>
+                <img   src="list1-img/top-content4.png"/>
+                <h1>
+                    <p>基石资本张维不一定要投行业前三只要有成三只</p>
+                </h1>
+                <h2>
+                    <img class="img1" />
+                    <span>89</span>
+                    <img class="img1"/>
+                    <span>2小时前</span>
+                </h2>
+            </li>
+        </ul>
+    </div>
+    <!--下部分-->
+    <div class="bottom">
+        <!--左下部分-->
+        <ul class="bottom-left">
+            <ul class="bottom-left-heard">
+                <h1>
+                    <img class="img1" />
+                    <span class="bottomone">孵化平台</span>
+                    <span class="bottomlast"><a>更多&gt;</a></span>
+                </h1>
+            </ul>
+            <ul class="bottom-left-content">
+                <ul>
+                    <li>
+                        <img src="" />
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="" />
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="" />
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="" />
+                    </li>
+                </ul>
+                <ul>
+                    <li style="margin: 0%;">
+                        <img src="" />
+                    </li>
+                </ul>
+
+                <ul>
+                    <li style="margin-top: 20px;">
+                        <img src="" />
+                    </li>
+                </ul>
+                <ul>
+                    <li style="margin-top: 20px;">
+                        <img src="" />
+                    </li>
+                </ul>
+                <ul>
+                    <li style="margin-top: 20px;">
+                        <img src="" />
+                    </li>
+                </ul>
+                <ul>
+                    <li style="margin-top: 20px;">
+                        <img src="" />
+                    </li>
+                </ul>
+                <ul>
+                    <li style="margin-top: 20px;margin-right: 0px;">
+                        <img src="" />
+                    </li>
+                </ul>
+            </ul>
+        </ul>
+        <!--右下部分-->
+        <ul class="bottom-right">
+            <h1 class="bottom-right-heard">
+                <img class="img1" />
+                <li class="bottomone">最新入驻</li>
+                <span class="bottomlast"><a>更多&gt;</a></span>
+            </h1>
+            <ul class="bottom-right-content">
+                <ul class="content1">
+                    <li class="log"><img src="" /></li>
+                    <h1>
+                            <img src="" />
+                            <span></span>
+                            <span></span>
+                    </h1>   
+                    <li><img src="" /></li>
+                </ul>
+                <ul>
+                    <img src="" />
+                    <h2></h2>
+                    <span></span>
+                </ul>
+                <ul>
+                    <img src="" />
+                    <h2></h2>
+                    <span></span>
+                </ul>
+                <ul>
+                    <img src="" />
+                    <h2></h2>
+                    <span></span>
+                </ul>
+                <ul>
+                    <img src="" />
+                    <h2></h2>
+                    <span></span>
+                </ul>
+
+            </ul>
+        </ul>
+
+    </div>
+
+
+
+       
+    </body>
+
+</html>
